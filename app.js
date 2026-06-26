@@ -128,6 +128,11 @@
           : 'Ответ записан.';
         form.classList.add('hidden');
         if (thanks) thanks.classList.remove('hidden');
+        // после ответа заголовок секции больше не нужен
+        var rsvpEyebrow = document.getElementById('rsvp-eyebrow');
+        var rsvpTitle = document.getElementById('rsvp-title');
+        if (rsvpEyebrow) rsvpEyebrow.classList.add('hidden');
+        if (rsvpTitle) rsvpTitle.classList.add('hidden');
         try { localStorage.setItem('wed-rsvp', JSON.stringify({ name: payload.guest, coming: coming })); } catch (er) {}
         // якорим на блок RSVP, чтобы благодарность была в зоне видимости
         // (через rAF — после того как форма скрылась и макет пересчитался)

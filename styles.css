@@ -274,6 +274,15 @@ section { padding: clamp(54px, 13vw, 84px) var(--pad); position: relative; }
 .loc__body { padding: 22px var(--pad) 24px; text-align: center; }
 .loc__venue { font-family: var(--font-serif); font-size: 26px; font-weight: 500; }
 .loc__addr { color: var(--muted); font-size: 14px; margin: 6px 0 18px; }
+.loc__arrive {
+  margin: 20px 0 0; color: var(--muted); font-size: 15px; letter-spacing: .02em;
+}
+.loc__arrive-time {
+  display: block; margin-top: 6px;
+  font-family: var(--font-serif); font-weight: 500;
+  font-size: clamp(40px, 13vw, 56px); line-height: 1;
+  color: var(--accent); letter-spacing: .01em;
+}
 
 /* ============================ BUTTONS ============================== */
 .btn {
